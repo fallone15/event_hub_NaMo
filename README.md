@@ -15,7 +15,7 @@ Ce dépôt contient la partie frontend de l'application **Campus Events Hub**, d
 ---
 
 ## 🗂️ Structure des fichiers
-
+```
 /front_end
 │
 ├── css/
@@ -32,6 +32,7 @@ Ce dépôt contient la partie frontend de l'application **Campus Events Hub**, d
 ├── register.html              → Page d’inscription
 ├── events.html                → Liste et détails des événements
 └── LICENSE                    → Fichier de licence (inclus dans les entêtes)
+```
 
 ## ⚙️ Configuration requise
 
