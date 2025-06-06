@@ -19,19 +19,24 @@ Ce dépôt contient la partie frontend de l'application **Campus Events Hub**, d
 /front_end
 │
 ├── css/
-│   ├── projettry2.css         → Feuille de style principale
-│   ├── register.css           → Style pour la page d’inscription
-│   └── login.css              → Style pour la page de connexion
+│   ├── projettry2.css         ← Feuille de style principale
+│   ├── register.css           ← Style pour la page d’inscription
+│   └── login.css              ← Style pour la page de connexion
 │
 ├── js/
-│   ├── event_projecttry2.js   → Script pour la page browse-events
-│   └── events.js              → Script pour affichage + inscriptions
+│   ├── event_projecttry2.js   ← Script pour la page browse-events
+│   ├── events.js              ← Script pour affichage + inscriptions
+│   └── home_js.js             ← script pour home.html
 │
-├── home.html                  → Page d’accueil
-├── login.html                 → Page de connexion
-├── register.html              → Page d’inscription
-├── events.html                → Liste et détails des événements
-└── LICENSE                    → Fichier de licence (inclus dans les entêtes)
+├── html/
+│   ├── home.html              ← Page d’accueil
+│   ├── login.html             ← Page de connexion
+│   ├── register.html          ← Page d’inscription
+│   ├── events.html            ← Liste et détails des événements
+│   └── browseevents.html     ← Nouvelle page browse-events ajoutée
+│
+├── image.jpeg                 ← Image en tête (header)
+└── LICENSE                   ← Fichier de licence
 ```
 
 ## ⚙️ Configuration requise
