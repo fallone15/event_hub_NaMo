@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Hub</title>
+    <link rel="stylesheet" href="..\css\projettry2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Campus Events Hub</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="login.html" id="login-link">Login</a>
+            <a href="register.html" id="register-link">Register</a>
+            <div id="user-menu" style="display:none;">
+                <span id="username-display"></span>
+                <a href="events.html"> My Events</a>
+                <a href="#" id="logout-link">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Dans votre <body> -->
+<section class="split-layout">
+    <!-- Partie Image à gauche -->
+    <div class="image-section">
+        <img src="..\image.jpeg" 
+             alt="Étudiants sur le campus" 
+             class="campus-image">
+    </div>
+
+    <!-- Partie Texte à droite -->
+    <div class="welcome-section">
+        <div class="welcome-content">
+            <h2>Welcome to Campus Events Hub!</h2>
+            <p class="welcome-subtext">Discover all upcoming campus events</p>
+            <p class="welcome-description">Find, join, and create events happening around campus</p>
+            <a href="browseevents.html" class="welcome-button">Browse Events</a>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <!-- Colonne Contacts -->
+        <div class="footer-col">
+            <h3>Contacts</h3>
+            <ul class="contact-list">
+                <li><a href="email"><i class="fas fa-envelope"></i> contact@campuseventshub.edu</a></li>
+                <li><a href="tel"><i class="fas fa-phone"></i> +212 537-773079</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> INPT, Rabat</li>
+            </ul>
+        </div>
+
+        <!-- Colonne Carte -->
+        <div class="footer-col">
+            <h3>Localisation</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.500015183354!2d-6.8692799236321935!3d33.97968837318426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76cc334a66611%3A0xee9ee437a0cfbaea!2sInstitut%20national%20des%20postes%20et%20t%C3%A9l%C3%A9communications!5e0!3m2!1sfr!2sma!4v1746715871892!5m2!1sfr!2sma" 
+                width="500" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen=""
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Colonne Urgences -->
+        <div class="footer-col">
+            <h3>Urgences</h3>
+            <ul class="emergency-list">
+                <li><i class="fas fa-ambulance"></i> Ambulance: 141</li>
+                <li><i class="fas fa-shield-alt"></i> Sécurité campus: 06 06 06 06 06</li>
+                <li><i class="fas fa-user-nurse"></i> Infirmerie: 06 01 01 01 01 </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<footer class="auto-hide-footer" id="pageFooter">
+    <div class="footer-content">
+        &copy; 2025 Campus Events Hub
+    </div>
+</footer>
+    <script src="..\js\home_js.js"></script> 
+</body>
+</html>

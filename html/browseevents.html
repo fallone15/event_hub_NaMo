@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Campus Events Hub</title>
+    <link rel="stylesheet" href="..\css\projettry2.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Events Hub</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <div class="events-container">
+            <aside class="filters">
+                <h2>Filters</h2>
+                <input type="text" id="search-input" placeholder="Search events...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="academic">Academic</option>
+                    <option value="social">Social</option>
+                    <option value="sports">Sports</option>
+                    <option value="workshop">Workshop</option>
+                </select>
+                <input type="date" id="date-filter">
+                <button id="apply-filters">Apply</button>
+            </aside>
+            <section class="events-list">
+                <h2>Upcoming Events</h2>
+                <div id="events-container">
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="..\js\event_projecttry2.js"></script>  
+</body>
+</html>

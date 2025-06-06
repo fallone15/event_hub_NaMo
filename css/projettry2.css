@@ -1,0 +1,477 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/* General Styles */
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: 2rem;
+    min-height: 80vh;
+}
+/* Event Styles */
+.events-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+}
+
+.filters {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filters h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.filters input, .filters select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.event-card .date {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.event-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+/* Layout Principal */
+.split-layout {
+    display: flex;
+    min-height: 400px;
+    margin: 2rem 0;
+}
+
+/* Section Image */
+.image-section {
+    flex: 1;
+    overflow: hidden;
+}
+
+.campus-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 0 0 8px;
+}
+
+/* Section Welcome */
+.welcome-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.welcome-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.welcome-subtext {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-description {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.welcome-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.welcome-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+    .split-layout {
+        flex-direction: column;
+    }
+    
+    .campus-image {
+        border-radius: 8px 8px 0 0;
+        height: 250px;
+    }
+    
+    .welcome-section {
+        border-radius: 0 0 8px 8px;
+    }
+}
+.auto-hide-footer {
+    position:fixed ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Taille étendue */
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-out;
+    z-index: 1000;
+}
+
+.footer-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* État caché */
+.footer-hidden {
+    transform: translateY(100%); /* Descend complètement */
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+    .auto-hide-footer {
+        height: 100px;
+    }
+    .footer-content {
+        font-size: 1.5rem;
+    }
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    .copyright {
+        height: 100px;
+    }
+    .footer-content {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
+/* Style des boutons */
+.register-btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #27ae60;
+}
+
+.register-btn.disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.register-btn.disabled::after {
+    content: "Connectez-vous pour vous inscrire";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.register-btn.disabled:hover::after {
+    opacity: 1;
+}
+/* Footer moderne */
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.contact-list, .emergency-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.contact-list i, .emergency-list i {
+    width: 20px;
+    margin-right: 10px;
+    color: #607ca7;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/* Font Awesome pour les icônes */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.event-card p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Bouton inscription */
+.event-card button {
+    background-color: var(--success-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.event-card button:hover {
+    background-color: #27ae60;
+}
+
+/* Bouton quand utilisateur non connecté */
+.event-card button.register-btn.disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.event-card button.register-btn.disabled::after {
+    content: "Connectez-vous pour vous inscrire";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.event-card button.register-btn.disabled:hover::after {
+    opacity: 1;
+}

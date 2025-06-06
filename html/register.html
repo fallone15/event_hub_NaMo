@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Campus Events Hub</title>
+  <link rel="stylesheet" href="..\css\register.css" />
+</head>
+<body>
+  <header>
+    <h1>Campus Events Hub</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="login.html">Login</a> 
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <form id="register-form">
+      <h2>Create Account</h2>
+
+      <div class="form-group">
+        <label for="reg-name">Full Name</label>
+        <input type="text" id="reg-name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="reg-password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="reg-password" minlength="8" required />
+          <span class="toggle-password">👁</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-confirm">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="reg-confirm" required />
+          <span class="toggle-password">👁</span>
+        </div>
+      </div>
+
+      <button type="submit" class="auth-btn">Register</button>
+
+      <p class="auth-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </form>
+  </main>
+
+  <script src="..\js\home_js.js"></script>
+</body>
+</html>
