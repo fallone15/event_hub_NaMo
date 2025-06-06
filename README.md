@@ -1,39 +1,67 @@
-<h1 align="center">Welcome to event_hub_front 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
-  <a href="C:\event_hub\front_end\LICENSE" target="_blank">
-    <img alt="License: LICENSE" src="https://img.shields.io/badge/License-LICENSE-yellow.svg" />
-  </a>
-</p>
+# Campus Events Hub - Frontend
 
-> Le frontend est développé avec HTML, CSS, et JavaScript
+Ce dépôt contient la partie frontend de l'application **Campus Events Hub**, développée en HTML, CSS et JavaScript vanilla. L'interface permet aux utilisateurs de visualiser, filtrer et s'inscrire à des événements organisés sur le campus.
 
-## Install
+---
 
-```sh
-npm install
-```
+## 🧩 Fonctionnalités principales
 
-## Run tests
+- Affichage dynamique des événements depuis un backend Node.js.
+- Filtres de recherche : par titre, date et catégorie.
+- Connexion utilisateur avec détection de session.
+- Inscription aux événements avec suivi de participation.
+- Vue détaillée d’un événement via `events.html?id=...`.
 
-```sh
-node back.js
-```
+---
 
-## Author
+## 🗂️ Structure des fichiers
 
-👤 **Nacoulma Mossamih**
+/front_end
+│
+├── css/
+│   ├── projettry2.css         → Feuille de style principale
+│   ├── register.css           → Style pour la page d’inscription
+│   └── login.css              → Style pour la page de connexion
+│
+├── js/
+│   ├── event_projecttry2.js   → Script pour la page browse-events
+│   └── events.js              → Script pour affichage + inscriptions
+│
+├── home.html                  → Page d’accueil
+├── login.html                 → Page de connexion
+├── register.html              → Page d’inscription
+├── events.html                → Liste et détails des événements
+└── LICENSE                    → Fichier de licence (inclus dans les entêtes)
 
-* Website: Campus_event_hub
-* Github: [@fallone15](https://github.com/fallone15)
+## ⚙️ Configuration requise
+
+- Backend Node.js (Express) écoutant sur `http://localhost:5000`
+- API REST exposée par le backend (`/api/events`, `/api/attendance`, etc.)
+- Session utilisateur gérée via sessions
+
+---
+
+## 🚀 Lancer le frontend
+
+Le frontend est un projet statique. Vous pouvez :
+- Ouvrir les fichiers HTML directement dans votre navigateur
+- Ou utiliser une extension comme **Live Server** dans VS Code
+
+http://localhost:5000/events.html
+
+## 📝 License
+Ce projet est distribué sous les termes de la MIT License. La licence est incluse en haut de chaque fichier source et dans le fichier LICENSE.
+
+✍️ Auteures
+👤 Nacoulma B. Doris Fallone et Mossamih Khadidja
+Site : Campus_event_hub (non spécifié)
+Github: [@fallone15](https://github.com/fallone15)
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Laisse nous une  ⭐️ si ce projet t'a été utile
 
-## 📝 License
-
-Copyright © 2025 [Nacoulma Mossamih](https://github.com/fallone15).<br />
+Copyright © 2025 [Nacoulma Mossamih](https://github.com/fallone15).
 This project is [LICENSE](C:\event_hub\front_end\LICENSE) licensed.
 
 ***
